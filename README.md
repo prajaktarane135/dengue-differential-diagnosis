@@ -1,5 +1,21 @@
 # dengue-differential-diagnosis
 Borderline-SMOTE and explainable stacked machine-learning pipeline for dengue differential diagnosis
+## Analyses reported in the manuscript
+
+- `patient_disjoint_validation.ipynb` — primary analysis using the first
+  available measurement per patient, patient-disjoint validation, grouped
+  cross-validation and fold-specific preprocessing and Borderline-SMOTE.
+  It also contains the reported sensitivity analyses.
+- `dengue_differential_diagnosis_pipeline.ipynb` — secondary,
+  observation-level analysis and the analytical reconstruction of its
+  passthrough-enabled stacking meta-classifier.
+
+The notebooks use the publicly available Figshare dataset. In Google Colab,
+place the CSV at `/content/figsharecsv.csv`, or change `CSV_PATH` in the
+notebook to its actual location. Results from the two analyses should not
+be treated as estimates from the same validation procedure.
+
+
 # Explainable Stacked Machine Learning for Dengue Differential Diagnosis
 
 This repository contains the complete analytical pipeline accompanying
